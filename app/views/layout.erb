@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>David's Task Manager</title>
+  </head>
+    <body class="body">
+      <ul class="nav nav-stacked">
+        <li class="col-md-3" role="presentation"><a href="/">Home</a></li>
+        <li class="col-md-3" role="presentation"><a href="/tasks">All Tasks</a></li>
+        <li class="col-md-3" role="presentation"><a href="/tasks/new"> Create New Task</a></h1>
+      </ul>
+    <div class="text-center">
+      <%= yield %>
+    </div>
+  </body>

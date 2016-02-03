@@ -6,10 +6,7 @@ tasks:
 - id: 3
   title: 'programming '
   description: is cool
-- id: 4
-  title: calzone
-  description: is also good
 - id: 5
   title: new task
   description: asfdaasd
-total: 5
+total: 6
