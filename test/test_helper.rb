@@ -6,7 +6,7 @@ require 'minitest/pride'
 require 'capybara/dsl'
 require 'tilt/erb'
 
-
+# we are testing git flow
 Capybara.app = TaskManagerApp
 
 Capybara.save_and_open_page_path = "tmp/capybara"

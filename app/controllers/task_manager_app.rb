@@ -31,7 +31,7 @@ class TaskManagerApp < Sinatra::Base
 
   put '/tasks/:id' do |id|
     task_manager.update(id.to_i, params[:task])
-    redirect "/tasks/#{id}"
+    redirect "/tasks/#{id}"dassafsadfsdadsafasfdsa
   end
 
   not_found do
@@ -46,10 +46,9 @@ class TaskManagerApp < Sinatra::Base
   def task_manager
     if ENV["RACK_ENV"] == "test"
       database = YAML::Store.new('db/task_manager_test')
-      @task_manager ||= TaskManager.new(database)
     else
       database = YAML::Store.new('db/task_manager')
-      @task_manager ||= TaskManager.new(database)
     end
+      @task_manager ||= TaskManager.new(database)
   end
 end

@@ -8,8 +8,7 @@ class UserCreatesTaskTest < Minitest::Test
     task_manager.create({
       title: 'Original Title',
       description: 'Original Description'
-    })
-
+    }
     visit '/tasks'
     save_and_open_page
     assert page.has_content? 'Original Title'
