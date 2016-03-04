@@ -40,5 +40,4 @@ class UserCreatesTaskTest < Minitest::Test
       assert page.has_content? 'Example Task'
     end
   end
-  
 end
